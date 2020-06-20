@@ -31,7 +31,9 @@
         ?>
         <tr>
             <td><?= $no++; ?></td>
-            <td><?= $dt['gambar']; ?></td>
+            <td>
+                <img src="img/<?= $dt['gambar']; ?>" width="100px" alt="">
+            </td>
             <td><?= $dt['nim']; ?></td>
             <td><?= $dt['nama']; ?></td>
             <td>
