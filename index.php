@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Data Mahasiswa</h1>
-    <a href="">Tambah</a>
+    <a href="page/tambah.php">Tambah</a>
 
     <br>
     <br>
