@@ -12,6 +12,11 @@
 </head>
 <body>
     <h1>Data Mahasiswa</h1>
+    <a href="">Tambah</a>
+
+    <br>
+    <br>
+    
     <table border="1" cellpadding="10" cellspacing="0">
         <tr>
             <th>No</th>
