@@ -1,7 +1,13 @@
 <?php 
     require '../function/function.php';
     
-    
+    if(isset($_POST['tambah'])) {
+        if(tambah($_POST) > 0) {
+            echo "Berhasil";
+        } else {
+            echo "Gagal";
+        }
+    }
 ?>
 
 <!DOCTYPE html>
@@ -48,7 +54,7 @@
                 <th>Gambar</th>
                 <td>:</td>
                 <td>
-                    <input type="file" name="gambar" id="" required>
+                    <input type="file" name="gambar" id="">
                 </td>
             </tr>
             <tr>
