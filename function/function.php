@@ -91,7 +91,28 @@
 
     // Tambah Data
     function tambah($data) {
+        $conn = conn();
 
+        $nama = htmlspecialchars($data['nama']);
+        $nim = htmlspecialchars($data['nim']);
+        $jurusan = htmlspecialchars($data['jurusan']);
+        $alamat = htmlspecialchars($data['alamat']);
+        $gambar = upload();
+
+        if(!$gambar) {
+            return false;
+        }
+
+        $sql = "
+            INSERT
+            into 
+            mahasiswa(nama,nim,jurusan,alamat,gambar)
+            values('$nama','$nim','$jurusan','$alamat','$gambar')
+        ";
+        
+        $conn->query($sql);
+        
+        return $conn->affected_rows;
     }
 
 ?>
